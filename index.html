@@ -3,7 +3,7 @@
 <HEAD>
     <META charset="UTF-8">
     <META name="viewport" content="width=device-width, initial-scale=1.0">
-    <TITLE> DR - Дилер Romanoff </TITLE>
+    <TITLE>DDSale</TITLE>
     <LINK rel="shortcut icon" href="DR.png" type="image/png">
     <STYLE>
         body {
@@ -40,10 +40,9 @@
             border-radius: 15px;
         }
 
-        .search input {
-            margin-left: 10px;
-            border: 2px solid #7a7b7e;
-            padding: 5px;
+        .search_input {
+            padding: 5px 15px;
+            font-size: 20px;
         }
 
         .login-button {
@@ -60,9 +59,13 @@
             margin: 50px;
             flex-grow: 1;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            display: block
         }
 
         .analysis-container {
@@ -86,22 +89,24 @@
 <BODY>
     <HEADER>
         <DIV class="help">
-            <a href="help.html" class="help-button" style="text-decoration: none;"> О сервисе </a>
-            <DIV class="search">
-                <INPUT type="text" placeholder="Поиск по сайту...">
-            </DIV>
+            <a href="help" class="help-button" style="text-decoration: none;"> О сервисе </a>
         </DIV>
         <DIV class="login">
-            <a href="login.html" class="login-button" style="text-decoration: none;"> Вход на сайт </a>
+            <a href="login" class="login-button" style="text-decoration: none;"> Вход на сайт </a>
         </DIV>
     </HEADER>
 
     <DIV class="content">
-
+        <h3>Добро пожаловать на наш сайт!</h3>
+        <p align="center"> Здесь вы сможете найти информацию о ситуации на авторынке.</p>
+        <p align="justify"> Для того чтобы узнать больше о нашем сервисе нажмите на кнопку <strong>"О сервисе"</strong>,
+             где подробно рассказано о его возможностях.</p>
+        <p align="justify"> Для того чтобы получить доступ к полному функционалу сайта просим вас войти в свой аккаунт,
+         если у вас нет аккаунта, то вы можете его создать там же.</p>
+        <p align="justify"> Для того чтобы посмотреть аналитику в виде графиков, нажмите на кнопку <strong>"Анализ"</strong>.</p>
     </DIV>
-
     <DIV class="analysis-container">
-        <a href="analysis.html" class="analysis-button"> Анализ </a>
+        <a href="analysis" class="analysis-button"> Анализ </a>
     </DIV>
 
 </BODY>
